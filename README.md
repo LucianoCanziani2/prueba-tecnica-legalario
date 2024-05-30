@@ -5,13 +5,13 @@ Este proyecto consiste en una aplicación web desarrollada en React que permite 
 
 Puede ver el proceso del ultimo a traves de console logs.
 
-La ultima parte en la que verifica la identidad puede tardar un tiempo largo, lo hubiese hecho en el back o desarrollado una API aparte, pero la prueba tecnica es Front-End, por lo que me limite a trabajar dentro de esos parametro. Alivie la carga separando la iniciacion de modelos al iniciar la web y su accion luego.
+La ultima parte en la que verifica la identidad puede tardar un tiempo largo, lo hubiese hecho en el back o desarrollado una API aparte, pero la prueba tecnica es Front-End, por lo que me limite a trabajar dentro de ese parametro. Alivie la carga separando la iniciacion de modelos al iniciar la web y su accion luego.
 
 ## Funcionalidades
 1. **Carga de Documento**: Permite al usuario arrastrar y soltar o hacer clic para subir un documento en formato PNG o JPEG.
 2. **Toma de Fotografía**: Accede a la cámara web del dispositivo para capturar una fotografía.
 3. **Vista Previa y Recorte**: Muestra una vista previa del documento cargado o la fotografía tomada y permite recortarlos para ajustarse a un aspecto ratio.
-4. **Toma de Selfie**: Solicita al usuario una selfie para compararla con el documento cargado.
+4. **Toma de Selfie**: Solicita al usuario una selfie para compararla con la foto del documento cargado.
 5. **Comparación de Imágenes**: Utiliza `face-api.js` para comparar las dos imágenes y determinar si pertenecen a la misma persona.
 
 ## Tecnologías Utilizadas
