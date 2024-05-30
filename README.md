@@ -15,7 +15,7 @@ La ultima parte en la que verifica la identidad puede tardar un tiempo largo, lo
 5. **Comparación de Imágenes**: Utiliza `face-api.js` para comparar las dos imágenes y determinar si pertenecen a la misma persona.
 
 ## Tecnologías Utilizadas
-- React ^18.3.1
+- `React` ^18.3.1
 - `react-dropzone` ^14.2.3 para la carga de archivos mediante drag-and-drop.
 - `react-webcam` ^7.2.0 para la captura de fotografías desde la cámara web.
 - `react-easy-crop` ^5.0.7 para el recorte de imágenes.
