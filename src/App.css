@@ -1,0 +1,387 @@
+* {
+  box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  font-family: "Inter";
+}
+
+.App {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  height: 111px;
+  width: 100%;
+  flex-direction: row;
+}
+
+nav img {
+  margin: 30px 42px;
+  width: 185px;
+  height: 53px;
+
+}
+
+.screen-background-half {
+  background: rgba(200, 212, 242, 0.40);
+  position: fixed;
+  height: 40%;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.cont-step {
+  display: flex;
+  width: fit-content;
+  padding: 24px 60px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 8px;
+  background-color: #FFF;
+  box-shadow: 0px 402px 113px 0px rgba(68, 96, 162, 0.00), 0px 257px 103px 0px rgba(68, 96, 162, 0.01), 0px 145px 87px 0px rgba(68, 96, 162, 0.05), 0px 64px 64px 0px rgba(68, 96, 162, 0.09), 0px 16px 35px 0px rgba(68, 96, 162, 0.10);
+}
+
+
+.w-100 {
+  width: 100%;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  color: #151515;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px;
+}
+
+h2 {
+  color: #5783EA;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+.s-blue-btn {
+  border: none;
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  border-radius: 8px;
+  background: #196CE3;
+  display: flex;
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  margin: 0 auto;
+  margin-top: -42px;
+}
+
+.l-blue-btn {
+  border: none;
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: #196CE3;
+}
+
+.light {
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.headers-cont {
+  margin-bottom: 40px;
+}
+
+
+
+.webcam-container-selfie {
+  position: relative;
+  display: inline-block;
+  width: 640px;
+  height: 484px;
+  overflow: hidden;
+}
+
+.head-shape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  height: auto;
+  background-color: transparent;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.6);
+  width: 40%;
+  height: 80%;
+  border: 1px solid #ffffffb3;
+  border-radius: 50%;
+}
+
+
+.card-shape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  background-color: transparent;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.6);
+  border: 1px solid #ffffffb3;
+  border-radius: 3%;
+  pointer-events: none;
+}
+
+.drag-drop-container {
+  border: 3px dashed rgba(25, 108, 227, 0.40);
+  background: rgba(188, 200, 234, 0.15);
+  padding: 20px;
+  width: 640px;
+  padding-bottom: 48px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.drag-drop-container+button+p {
+  color: #505050;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  opacity: 0.4;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 18px;
+}
+
+
+.upload-area {
+  margin-bottom: 10px;
+}
+
+.upload-area div p:nth-of-type(1) {
+  color: #151515;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.upload-area div p:nth-of-type(2) {
+  color: #196CE3;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+
+.upload-area div span {
+  opacity: 0.2;
+  color: #000;
+  font-size: 16.2px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16.2px;
+  opacity: 0.2;
+}
+
+.cropper-cont {
+  width: 640px;
+  height: 365px;
+  position: relative;
+
+}
+
+.reactEasyCrop_CropArea {
+  color: rgba(255, 255, 255, 0.535) !important;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 300px;
+}
+
+.webcam-container {
+  position: relative;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: auto;
+  overflow: hidden;
+}
+
+.card-webcam-cont {
+  position: relative;
+  width: 640px;
+  height: 484px;
+  overflow: hidden;
+}
+
+.webcam {
+  width: 100%;
+  height: auto;
+}
+
+.need-help {
+  color: #196CE3;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+}
+
+.icon-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.spinner {
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .drag-drop-container {
+    width: fit-content;
+  }
+
+  .webcam-container {
+    width: 100%;
+    max-width: 390px;
+  }
+
+  .webcam-container-selfie {
+    width: -moz-fit-content;
+    width: 100%;
+    max-width: 390px;
+    height: fit-content;
+    margin: 0px auto;
+  }
+
+  .cropper-cont {
+    width: 100%;
+    height: 365px;
+  }
+
+  .cont-step {
+    padding: 24px 16px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-webcam-cont {
+    width: 100%;
+  }
+
+  .card-webcam-cont {
+    width: -moz-fit-content;
+    width: 100%;
+    max-width: 390px;
+    height: fit-content;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 4 / 3;
+  }
+
+  .webcam-container-selfie {
+    width: -moz-fit-content;
+    width: 100%;
+    max-width: 390px;
+    height: fit-content;
+    margin: 0px auto;
+  }
+
+  .webcam {
+    width: 140% !important;
+    height: auto;
+  }
+
+  .head-shape {
+    height: 70%;
+    width: 77%;
+  }
+
+  .upload-area div p:nth-of-type(1) {
+    display: none;
+  }
+
+  .upload-area div span:nth-of-type(1) {
+    display: none;
+  }
+
+  .drag-drop-parent {
+    width: 100%;
+  }
+
+  .drag-drop-parent div {
+    width: 100%;
+  }
+}
