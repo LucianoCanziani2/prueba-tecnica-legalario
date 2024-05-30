@@ -14,18 +14,6 @@ La ultima parte en la que verifica la identidad puede tardar un tiempo largo, lo
 4. **Toma de Selfie**: Solicita al usuario una selfie para compararla con el documento cargado.
 5. **Comparación de Imágenes**: Utiliza `face-api.js` para comparar las dos imágenes y determinar si pertenecen a la misma persona.
 
-## Requerimientos Funcionales
-- Solicitar un archivo en formato PNG o JPEG.
-- Acceder a la cámara web del dispositivo del usuario.
-- Mostrar una vista previa del documento cargado o de la fotografía tomada.
-- Conectar las etapas secuencialmente: seleccionar un documento, cargar el documento, mostrar vista previa, etc.
-
-## Requerimientos No Funcionales
-- Interfaces responsivas.
-- Compatibilidad con los navegadores más usados: Google Chrome, Safari, IE Edge, y Mozilla Firefox en sus versiones más recientes.
-- Evaluación en dispositivos móviles en orientación “Landscape” y “Viewpoint”.
-- Entrega de la solución en un lapso no mayor a 12 horas.
-
 ## Tecnologías Utilizadas
 - React ^18.3.1
 - `react-dropzone` ^14.2.3 para la carga de archivos mediante drag-and-drop.
