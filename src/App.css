@@ -264,8 +264,11 @@ button {
 .card-webcam-cont {
   position: relative;
   width: 640px;
-  height: 484px;
+  height: 410px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .webcam {
@@ -337,7 +340,7 @@ button {
     width: 100%;
     max-width: 390px;
     height: -moz-fit-content;
-    height: 552px;
+    height: 295px;
     margin: 0px auto;
     display: flex;
     justify-content: center;

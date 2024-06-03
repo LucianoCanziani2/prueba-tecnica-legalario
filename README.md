@@ -1,14 +1,5 @@
 # Prueba Técnica Legalario
 
-## Objetivo
-Desarrollar un flujo en React para la carga de documentos y toma de fotografías.
-
-## Puesto
-Full Stack
-
-## Fecha de Actualización
-30 Mayo 2024
-
 ## Descripción del Proyecto
 Este proyecto consiste en una aplicación web desarrollada en React que permite a los usuarios cargar un documento de identidad, tomar una fotografía con la cámara web del dispositivo, visualizar y recortar las imágenes, y comparar ambas utilizando los modelos de la libreria `face-api.js` para verificar si son la misma persona.
 
@@ -22,18 +13,6 @@ La ultima parte en la que verifica la identidad puede tardar un tiempo largo, lo
 3. **Vista Previa y Recorte**: Muestra una vista previa del documento cargado o la fotografía tomada y permite recortarlos para ajustarse a un aspecto ratio.
 4. **Toma de Selfie**: Solicita al usuario una selfie para compararla con el documento cargado.
 5. **Comparación de Imágenes**: Utiliza `face-api.js` para comparar las dos imágenes y determinar si pertenecen a la misma persona.
-
-## Requerimientos Funcionales
-- Solicitar un archivo en formato PNG o JPEG.
-- Acceder a la cámara web del dispositivo del usuario.
-- Mostrar una vista previa del documento cargado o de la fotografía tomada.
-- Conectar las etapas secuencialmente: seleccionar un documento, cargar el documento, mostrar vista previa, etc.
-
-## Requerimientos No Funcionales
-- Interfaces responsivas.
-- Compatibilidad con los navegadores más usados: Google Chrome, Safari, IE Edge, y Mozilla Firefox en sus versiones más recientes.
-- Evaluación en dispositivos móviles en orientación “Landscape” y “Viewpoint”.
-- Entrega de la solución en un lapso no mayor a 12 horas.
 
 ## Tecnologías Utilizadas
 - React ^18.3.1

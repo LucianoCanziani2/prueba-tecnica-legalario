@@ -12,7 +12,6 @@ const App = () => {
   const [step, setStep] = useState(1);
 
   const nextStep = () => setStep(step + 1);
-  const previousStep = () => setStep(step - 1);
 
   useEffect(() => {
     const loadModels = async () => {
@@ -45,7 +44,7 @@ const App = () => {
       {step === 2 &&
         <SelfieCapture
           setSelfie={setSelfie}
-          previousStep={previousStep}
+          selfie={selfie}
           nextStep={nextStep}
         />}
       {step === 3 &&
