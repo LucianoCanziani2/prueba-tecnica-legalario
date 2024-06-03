@@ -19,7 +19,7 @@ const SelfieCapture = ({ setSelfie, nextStep }) => {
     };
 
     return (
-        <div className="cont-step">
+        <div className={`cont-step webcam-open`}>
             <div className='headers-cont'>
                 <h1>Tomate una selfie</h1>
                 <h2>Necesitamos validar tu identidad</h2>
@@ -31,12 +31,12 @@ const SelfieCapture = ({ setSelfie, nextStep }) => {
                     mirrored={true}
                     screenshotFormat="image/jpeg"
                     videoConstraints={videoConstraints}
-                    className="webcam-feed"
+                    className="webcam-selfie"
                 />
                 <div className="head-shape"></div>
             </div>
             <button className='l-blue-btn' onClick={capture}>
-                <img src="/img/camara.svg" alt='' width="31px" height="27px" /> Tomar foto
+                <img src="/img/camara.svg" alt='' width="28px" height="27px" /> Tomar foto
             </button>
         </div>
     );

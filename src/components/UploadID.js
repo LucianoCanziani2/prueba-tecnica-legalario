@@ -3,7 +3,7 @@ import React, { useState, useCallback, useRef, useEffect } from 'react';
 import { useDropzone } from 'react-dropzone';
 import Webcam from 'react-webcam';
 import Cropper from 'react-easy-crop';
-import getCroppedImg from "./cropImage"; // Ensure this utility function is properly implemented
+import getCroppedImg from "./cropImage";
 
 const UploadID = ({ setIDImage, nextStep }) => {
     const [file, setFile] = useState(null);
@@ -48,7 +48,7 @@ const UploadID = ({ setIDImage, nextStep }) => {
     };
 
     return (
-        <div className='cont-step'>
+        <div className={`cont-step ${webcamOpen ? "webcam-open" : ""}`}>
             <div className='headers-cont'>
                 <h1>Carga tu documento</h1>
                 <h2>Parte delantera</h2>
@@ -94,7 +94,7 @@ const UploadID = ({ setIDImage, nextStep }) => {
                     </div>
                     {!file && (
                         <button className='s-blue-btn' onClick={handleCaptureClick}>
-                            <img src="/img/camara.svg" alt='' width="31px" height="27px" /> Usar Camara
+                            <img src="/img/camara.svg" alt='' width="28px" height="27px" /> Usar Camara
                         </button>
                     )}
 
@@ -150,7 +150,7 @@ const WebcamCapture = ({ onCapture }) => {
             </div>
 
             <button className='l-blue-btn' onClick={capture}>
-                <img src="/img/camara.svg" alt='' width="31px" height="27px" />Tomar foto
+                <img src="/img/camara.svg" alt='' width="28px" height="27px" />Tomar foto
             </button>
         </div>
 

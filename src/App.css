@@ -18,22 +18,22 @@
 nav {
   display: flex;
   justify-content: flex-start;
-  height: 111px;
+  height: 80px;
   width: 100%;
   flex-direction: row;
+  align-items: center;
 }
 
 nav img {
-  margin: 30px 42px;
-  width: 185px;
-  height: 53px;
-
+  margin: 0px 42px;
+  width: 132px;
+  height: 37px;
 }
 
 .screen-background-half {
   background: rgba(200, 212, 242, 0.40);
   position: fixed;
-  height: 40%;
+  height: 45%;
   width: 100%;
   bottom: 0px;
   left: 0px;
@@ -63,7 +63,7 @@ h2 {
 
 h1 {
   color: #151515;
-  font-size: 32px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 600;
   line-height: 38px;
@@ -71,7 +71,7 @@ h1 {
 
 h2 {
   color: #5783EA;
-  font-size: 24px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 500;
   line-height: 38px;
@@ -94,17 +94,17 @@ button {
 .s-blue-btn {
   border: none;
   color: #FFF;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 40px;
   border-radius: 8px;
   background: #196CE3;
   display: flex;
-  padding: 20px 40px;
+  padding: 10px 35px;
   justify-content: center;
   align-items: center;
-  gap: 28px;
+  gap: 20px;
   margin: 0 auto;
   margin-top: -42px;
 }
@@ -112,14 +112,14 @@ button {
 .l-blue-btn {
   border: none;
   color: #FFF;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 40px;
   width: 100%;
   margin-top: 40px;
   display: flex;
-  padding: 20px 40px;
+  padding: 10px 35px;
   justify-content: center;
   align-items: center;
   gap: 12px;
@@ -137,7 +137,7 @@ button {
 }
 
 .headers-cont {
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 
@@ -192,7 +192,7 @@ button {
 
 .drag-drop-container+button+p {
   color: #505050;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
@@ -209,7 +209,7 @@ button {
 
 .upload-area div p:nth-of-type(1) {
   color: #151515;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
@@ -217,7 +217,7 @@ button {
 
 .upload-area div p:nth-of-type(2) {
   color: #196CE3;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 20px;
@@ -227,7 +227,7 @@ button {
 .upload-area div span {
   opacity: 0.2;
   color: #000;
-  font-size: 16.2px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 16.2px;
@@ -271,6 +271,7 @@ button {
 .webcam {
   width: 100%;
   height: auto;
+
 }
 
 .need-help {
@@ -313,21 +314,13 @@ button {
     max-width: 390px;
   }
 
-  .webcam-container-selfie {
-    width: -moz-fit-content;
-    width: 100%;
-    max-width: 390px;
-    height: fit-content;
-    margin: 0px auto;
-  }
-
   .cropper-cont {
     width: 100%;
     height: 365px;
   }
 
   .cont-step {
-    padding: 24px 16px;
+    padding: 24px 50px;
   }
 
   nav {
@@ -343,7 +336,8 @@ button {
     width: -moz-fit-content;
     width: 100%;
     max-width: 390px;
-    height: fit-content;
+    height: -moz-fit-content;
+    height: 552px;
     margin: 0px auto;
     display: flex;
     justify-content: center;
@@ -352,21 +346,32 @@ button {
   }
 
   .webcam-container-selfie {
-    width: -moz-fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    min-width: 390px;
     max-width: 390px;
-    height: fit-content;
+    height: 552px;
     margin: 0px auto;
+    aspect-ratio: 4 / 3;
   }
 
   .webcam {
-    width: 140% !important;
+    transform: scale(1.87) !important;
+    width: 100%;
     height: auto;
   }
 
+  .webcam-selfie {
+    transform: scaleX(-1) scale(0.77) !important;
+  }
+
   .head-shape {
-    height: 70%;
-    width: 94%;
+    height: 89%;
+    width: 91%;
   }
 
   .upload-area div p:nth-of-type(1) {
@@ -379,6 +384,10 @@ button {
 
   .drag-drop-parent {
     width: 100%;
+  }
+
+  .webcam-open {
+    padding: 24px 10px;
   }
 
   .drag-drop-parent div {
